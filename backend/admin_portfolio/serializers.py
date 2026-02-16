@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Project, Technology, Skill, Experience, Education, ContactMessage
+from .models import Project, Technology, Skill, Experience, Education, ContactMessage, Profile, SocialMedia, Attribution
 
 class TechnologySerializer(serializers.ModelSerializer):
     class Meta:
@@ -11,7 +11,7 @@ class ProjectSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Project
-        fields = ['id', 'name', 'description', 'url', 'image', 'date_uploaded', 'technologies']
+        fields = ['id', 'name', 'description', 'url', 'image', 'technologies']
 
 class SkillSerializer(serializers.ModelSerializer):
     class Meta:
@@ -26,9 +26,25 @@ class ExperienceSerializer(serializers.ModelSerializer):
 class EducationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Education
-        fields = ['id', 'degree', 'institution', 'description', 'start_date', 'end_date']
+        fields = ['id', 'degree', 'institution', 'description', 'start_date', 'end_date', 'is_current']
 
-class ContactMessageSerializer(serializers.ModelSerializer):
+class ContactSerializer(serializers.Serializer):
+    name = serializers.CharField(max_length=100)
+    email = serializers.EmailField()
+    message = serializers.CharField()
+
+class SocialMediaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ContactMessage
-        fields = ['id', 'name', 'email', 'message']
+        model = SocialMedia
+        fields = ['id', 'name', 'url', 'icon']
+
+class ProfileSerializer(serializers.ModelSerializer):
+    social_media = SocialMediaSerializer(many=True, read_only=True)
+    class Meta:
+        model = Profile
+        fields = ['id', 'name', 'email', 'description', 'image', 'social_media']
+
+class AttributionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Attribution
+        fields = ['id', 'name', 'title', 'url']

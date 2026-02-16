@@ -1,0 +1,16 @@
+{% extends "two_factor/_base.html" %}
+{% load i18n %}
+{% block two_factor_content %}
+{{ block.super }}
+{# The library's logic goes here #}
+<h1>{% block title %}{% translate "Login" %}{% endblock %}</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ wizard.management_form }}
+    {{ wizard.form.as_p }}
+    Testing if it works
+
+    <input type="submit" value="{% trans 'Log in' %}" />
+</form>
+{% endblock %}
