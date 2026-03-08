@@ -1,0 +1,20 @@
+<a href="https://www.flaticon.es/iconos-gratis/django" title="django iconos">Django iconos creados por Freepik - Flaticon</a> Django Icons
+<a href="https://www.flaticon.es/iconos-gratis/javascript" title="javascript iconos">Javascript iconos creados por Freepik - Flaticon</a> Javascript Icons
+<a href="https://www.flaticon.es/iconos-gratis/css" title="css iconos">Css iconos creados por shohanur.rahman13 - Flaticon</a> CSS Icons
+<a href="https://www.flaticon.es/iconos-gratis/html" title="html iconos">Html iconos creados por Freepik - Flaticon</a> HTML Icons
+<a href="https://www.flaticon.es/iconos-gratis/archivo-de-python" title="archivo de python iconos">Archivo de python iconos creados por Smashicons - Flaticon</a> Python Icons
+<a href="https://www.flaticon.es/iconos-gratis/github" title="github iconos">Github iconos creados por Laisa Islam Ani - Flaticon</a> Github Icons
+<a href="https://www.flaticon.es/iconos-gratis/git" title="git iconos">Git iconos creados por smalllikeart - Flaticon</a> Git Icons
+<a href="https://www.flaticon.es/iconos-gratis/ts" title="ts iconos">Ts iconos creados por Muhammad Atif - Flaticon</a> TypeScript Icons
+<a href="https://www.flaticon.es/iconos-gratis/postgre" title="postgre iconos">Postgre iconos creados por Freepik - Flaticon</a> Postgre Icons
+<a href="https://www.flaticon.es/iconos-gratis/mysql" title="mysql iconos">Mysql iconos creados por Pixel perfect - Flaticon</a> MySQL Icons
+<a href="https://www.flaticon.es/iconos-gratis/nube-creativa" title="nube creativa iconos">Nube creativa iconos creados por Maniprasanth - Flaticon</a> Cloud Icons
+
+
+<a href="https://www.flaticon.es/iconos-gratis/solucion" title="solución iconos">Solución iconos creados por Freepik - Flaticon</a>
+<a href="https://www.flaticon.es/iconos-gratis/desarrollo-de-software" title="desarrollo de software iconos">Desarrollo de software iconos creados por juicy_fish - Flaticon</a>
+<a href="https://www.flaticon.es/iconos-gratis/videollamada" title="videollamada iconos">Videollamada iconos creados por Prosymbols Premium - Flaticon</a>
+<a href="https://www.flaticon.es/iconos-gratis/aprendizaje-automatico" title="aprendizaje-automatico iconos">Aprendizaje-automatico iconos creados por Freepik - Flaticon</a>
+<a href="https://www.flaticon.es/iconos-gratis/motivacion" title="motivacion iconos">Motivacion iconos creados por Eucalyp - Flaticon</a>
+<a href="https://www.flaticon.es/iconos-gratis/ayuda" title="ayuda iconos">Ayuda iconos creados por Freepik - Flaticon</a>
+<a href="https://www.flaticon.es/iconos-gratis/velocidad" title="velocidad iconos">Velocidad iconos creados por itim2101 - Flaticon</a>

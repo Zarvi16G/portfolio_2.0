@@ -1,0 +1,19 @@
+services:
+  backend:
+    build: ./backend
+    command: gunicorn backend.wsgi:application --bind 0.0.0.0:8000 --workers 2 --timeout 120 --worker-tmp-dir /dev/shm
+    volumes:
+      - ./backend:/code
+      - ./backend/staticfiles:/code/staticfiles
+      - ./backend/media:/code/media
+    env_file:
+      - ./backend/.env
+    ports:
+      - "8000:8000"
+  frontend:
+    build: ./frontend
+    container_name: portfolio_frontend
+    volumes:
+      - /var/www/santiagoboada.dev/dist:/app/output
+    command: sh -c "cp -r /app/dist/. /app/output/"
+

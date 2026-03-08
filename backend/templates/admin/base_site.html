@@ -1,0 +1,26 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}Control Panel Zarvi16G{% endblock %}
+
+{% block branding %}
+<div id="site-name">
+    <a href="{% url 'admin:index' %}">
+        Control Panel Zarvi16G
+    </a>
+</div>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block userlinks %}
+{{ block.super }}
+<p>Two Factor Authentication:</p>
+<a href="{% url 'two_factor:setup' %}">⚙️</a>
+<a href="{% url 'two_factor:qr' %}">🏁</a>
+<a href="{% url 'two_factor:setup_complete' %}">✅</a>
+<a href="{% url 'two_factor:backup_tokens' %}">🔑</a>
+<a href="{% url 'two_factor:profile' %}">👤</a>
+<a href="{% url 'two_factor:disable' %}">❌</a>
+<a href="https://www.flaticon.es/iconos-gratis/django" title="django iconos">Django iconos creados por Freepik -
+    Flaticon</a>
+{% endblock %}

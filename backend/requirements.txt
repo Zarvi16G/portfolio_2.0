@@ -1,0 +1,10 @@
+Django
+djangorestframework
+django-cors-headers
+djangorestframework-simplejwt
+python-dotenv
+pillow
+django-two-factor-auth
+phonenumbers
+django-zoho-zeptomail
+gunicorn
