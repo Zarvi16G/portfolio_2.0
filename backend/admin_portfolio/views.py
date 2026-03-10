@@ -7,6 +7,7 @@ from .models import Project, Skill, Experience, Education, ContactMessage, Profi
 from .serializers import ProjectSerializer, SkillSerializer, ExperienceSerializer, EducationSerializer, ContactSerializer, ProfileSerializer, SocialMediaSerializer, AttributionSerializer
 from django.core.mail import send_mail
 from django.conf import settings
+from rest_framework.throttling import ScopedRateThrottle
 
 @permission_classes([AllowAny])
 class PortfolioView(APIView):
@@ -64,16 +65,21 @@ class EducationView(APIView):
 
 @permission_classes([AllowAny])
 class ContactMessageView(APIView):
+    throttle_classes = [ScopedRateThrottle]
+    throttle_scope = 'contact_form'
     def post(self, request):
         serializer = ContactSerializer(data=request.data)
         if serializer.is_valid():
             name = serializer.validated_data['name']
             email = serializer.validated_data['email']
             message = serializer.validated_data['message']
+            honeypot = serializer.validated_data['phone_number']
+            if honeypot:
+                return Response({'message': 'Thank you for the message'}, status=status.HTTP_200_OK)
             
             # Send email
             send_mail(
-                subject='New Portfolio Message',
+                subject='Portfolio Contact Message',
                 message=f"From: {name}\nEmail: {email}\nMessage:\n\n{message}",
                 from_email=settings.DEFAULT_FROM_EMAIL,
                 recipient_list=[settings.DEFAULT_FROM_EMAIL]
@@ -81,3 +87,4 @@ class ContactMessageView(APIView):
             
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+

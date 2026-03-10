@@ -6,7 +6,7 @@ import { useTheme } from "../context/ThemeContext";
 interface ProjectCardProps {
   project: Project;
 }
-const BACKEND_URL_2 = "http://localhost:8000";
+const MEDIA_URL = import.meta.env.VITE_MEDIA_URL;
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { isDark } = useTheme();
@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       {/* 🖼️ Image Section */}
       <div className="relative h-48 w-full overflow-hidden">
         <img
-          src={`${BACKEND_URL_2}${project.image}`}
+          src={`${MEDIA_URL}${project.image}`}
           alt={project.name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
         />
@@ -100,7 +100,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               >
                 {tech.icon && (
                   <img
-                    src={`${BACKEND_URL_2}${tech.icon}`}
+                    src={`${MEDIA_URL}${tech.icon}`}
                     alt={tech.name}
                     className="w-4 h-4 object-contain"
                   />

@@ -265,7 +265,7 @@ function AppContent({
                   </h4>
                   <div className="flex flex-wrap justify-center gap-4">
                     {attributions.map((attr) => (
-                      <AttributionCard key={attr.name} attribution={attr} />
+                      <AttributionCard key={attr.id} attribution={attr} />
                     ))}
                   </div>
                 </div>

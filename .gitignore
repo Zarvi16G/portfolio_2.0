@@ -19,3 +19,4 @@ build/
 # Editor
 .vscode/
 .idea/
+dont_push.txt

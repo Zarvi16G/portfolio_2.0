@@ -7,7 +7,7 @@ interface SkillCardProps {
   skill: Skill;
 }
 
-const BACKEND_URL = "http://127.0.0.1:8000";
+const MEDIA_URL = import.meta.env.VITE_MEDIA_URL;
 
 const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
   const { isDark } = useTheme();
@@ -22,7 +22,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
     >
       {skill.icon ? (
         <img
-          src={`${BACKEND_URL}${skill.icon}`}
+          src={`${MEDIA_URL}${skill.icon}`}
           alt={skill.name}
           className={`w-16 h-16 mb-4 object-contain transition-all ${
             isDark

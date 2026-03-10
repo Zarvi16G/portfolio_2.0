@@ -53,6 +53,7 @@ export interface SocialMedia {
 }
 
 export interface Attribution {
+  id: number;
   name: string;
   title: string;
   url: string;

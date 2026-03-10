@@ -32,7 +32,9 @@ class ContactSerializer(serializers.Serializer):
     name = serializers.CharField(max_length=100)
     email = serializers.EmailField()
     message = serializers.CharField()
-
+    #Trap to bots
+    phone_number = serializers.CharField(max_length=15)
+    
 class SocialMediaSerializer(serializers.ModelSerializer):
     class Meta:
         model = SocialMedia

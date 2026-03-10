@@ -7,7 +7,7 @@ interface ProfileCardProps {
   profile: Profile;
 }
 
-const BACKEND_URL = "http://127.0.0.1:8000";
+const MEDIA_URL = import.meta.env.VITE_MEDIA_URL;
 
 const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
   const { isDark, toggleTheme } = useTheme();
@@ -24,7 +24,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
         {/* 🖼️ Profile Image */}
         <div className="md:w-1/3 relative group overflow-hidden w-full">
           <img
-            src={`${BACKEND_URL}${profile.image}`}
+            src={`${MEDIA_URL}${profile.image}`}
             alt={profile.name}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-90 group-hover:opacity-100"
           />
@@ -138,7 +138,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ profile }) => {
                 ></div>
                 {social.icon ? (
                   <img
-                    src={`${BACKEND_URL}${social.icon}`}
+                    src={`${MEDIA_URL}${social.icon}`}
                     alt={social.name}
                     className={`w-8 h-8 relative z-10 filter hover:brightness-125 ${
                       isDark ? "" : "invert-0"

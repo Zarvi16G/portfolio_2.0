@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 
-const BACKEND_URL = "http://127.0.0.1:8000";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const ContactSection: React.FC = () => {
   const { isDark } = useTheme();
@@ -26,7 +26,7 @@ const ContactSection: React.FC = () => {
     e.preventDefault();
     setStatus("submitting");
     try {
-      const response = await fetch(`${BACKEND_URL}/api/contact/`, {
+      const response = await fetch(`${API_URL}/contact/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,6 +37,9 @@ const ContactSection: React.FC = () => {
       if (response.ok) {
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
+      } else if (response.status === 429) {
+        setStatus("error");
+        setErrorMsg("You have sent too many messages. Please try again later.");
       } else {
         setStatus("error");
         setErrorMsg("Something went wrong. Please try again.");
@@ -152,6 +155,18 @@ const ContactSection: React.FC = () => {
                   : "bg-gray-50 border-gray-300 text-gray-900 focus:border-cyan-500 focus:ring-cyan-500"
               }`}
               placeholder="TRANSMIT YOUR MESSAGE..."
+            />
+          </div>
+          <div style={{ display: "none" }} aria-hidden="true">
+            <label htmlFor="phone_number">
+              Si eres humano, deja esto vacío
+            </label>
+            <input
+              type="text"
+              id="phone_number"
+              name="phone_number"
+              tabIndex={-1}
+              onChange={handleChange}
             />
           </div>
 
