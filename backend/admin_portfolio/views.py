@@ -73,10 +73,10 @@ class ContactMessageView(APIView):
             name = serializer.validated_data['name']
             email = serializer.validated_data['email']
             message = serializer.validated_data['message']
-            honeypot = serializer.validated_data['phone_number']
+            honeypot = request.data.get('phone_number')
             if honeypot:
                 return Response({'message': 'Thank you for the message'}, status=status.HTTP_200_OK)
-            
+
             # Send email
             send_mail(
                 subject='Portfolio Contact Message',
@@ -84,7 +84,6 @@ class ContactMessageView(APIView):
                 from_email=settings.DEFAULT_FROM_EMAIL,
                 recipient_list=[settings.DEFAULT_FROM_EMAIL]
             )
-            
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

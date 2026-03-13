@@ -1,0 +1,397 @@
+[
+  {
+    "model": "admin_portfolio.profile",
+    "pk": 1,
+    "fields": {
+      "name": "Santiago Boada Rivas",
+      "email": "santiago@santiagoboada.dev",
+      "description": "Bridging the gap between complex data logic and seamless user experience. I specialize in the Django-React ecosystem, leveraging the power of Python and MySQL to build tools that solve real-world problems.\r\n\r\nMy workflow is rooted in the Terminal, powered by Git/GitHub, and optimized for the modern web. Whether it’s deploying SEO-friendly frontends or securing administrative backends with Two-Factor Authentication, I build with precision, security, and a vision for the future of the web.",
+      "image": "profile_images/37f3b23b-687a-4bcf-a08c-3fc554106264.png",
+      "social_media": [1, 2]
+    }
+  },
+  {
+    "model": "admin_portfolio.socialmedia",
+    "pk": 1,
+    "fields": {
+      "name": "Github",
+      "url": "https://github.com/Zarvi16G?tab=repositories",
+      "icon": "social_media_images/github.png"
+    }
+  },
+  {
+    "model": "admin_portfolio.socialmedia",
+    "pk": 2,
+    "fields": {
+      "name": "Linkedin",
+      "url": "https://www.linkedin.com/in/santiago-boada-rivas-6b4a392a4/",
+      "icon": "social_media_images/linkedin.png"
+    }
+  },
+  {
+    "model": "admin_portfolio.socialmedia",
+    "pk": 3,
+    "fields": {
+      "name": "Mail",
+      "url": "https://accounts.zoho.com",
+      "icon": "social_media_images/mensaje.png"
+    }
+  },
+  {
+    "model": "admin_portfolio.project",
+    "pk": 1,
+    "fields": {
+      "name": "Finance Tracker 💰",
+      "description": "> Features\r\n- Dashboard: Visual overview of your financial health.\r\n- Financial Health Indicators:\r\n- Net Worth: Assets - Liabilities.\r\n- Debt-to-Income Ratio: Monitor debt burden.\r\n- Savings Rate: Track monthly savings % of income.\r\n- Emergency Fund: Runway calculation based on liquid assets.\r\n- Detailed Tracking: Input forms for Incomes, Expenses, Assets, and Liabilities with frequencies and categories.\r\n- Authentication: Secure JWT-based login system ensuring data privacy.",
+      "image": "project_images/Gemini_Generated_Image_3d20qe3d20qe3d20-Photoroom_81VpMrE.png",
+      "url": "https://github.com/Zarvi16G/finance_tracker",
+      "technologies": [1, 2, 4, 5]
+    }
+  },
+  {
+    "model": "admin_portfolio.project",
+    "pk": 2,
+    "fields": {
+      "name": "Task Management AI",
+      "description": "Task Management with AI to organize task according to the data provided to the ai.",
+      "image": "project_images/Gemini_Generated_Image_ksdo2lksdo2lksdo-Photoroom.png",
+      "url": "https://github.com/Zarvi16G/task_managment_AI/tree/master",
+      "technologies": [4, 5]
+    }
+  },
+  {
+    "model": "admin_portfolio.project",
+    "pk": 3,
+    "fields": {
+      "name": "Dian Tax APP",
+      "description": "Project: DIAN Tax Compliance SaaS\r\nThe Problem: High volatility in Colombian tax regulations leads to human error in manual calculations and data silos within small companies.\r\n\r\nThe Solution: A Full-stack Web Application (Python/Django/PostgreSQL) built with a Multi-tenant architecture.\r\n\r\nKey Features & Value:\r\n\r\nImmutable Tax Logic: A dynamic TaxConfig system that preserves historical UVT data, ensuring reports remain accurate across different fiscal years.\r\n\r\nSecure Role-Based Access (RBAC): Custom membership logic (Owner, Editor, Viewer) to protect sensitive financial data while enabling collaboration.\r\n\r\nData Integrity: Developed with Decimal precision to eliminate the common floating-point errors found in basic accounting scripts.\r\n\r\nScalable Architecture: Designed to handle multiple companies under a single subscription model, prepared for API integration with DIAN systems.",
+      "image": "project_images/Gemini_Generated_Image_aivpgjaivpgjaivp-Photoroom.png",
+      "url": "https://github.com/Zarvi16G/finance_tracker",
+      "technologies": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    }
+  },
+  {
+    "model": "admin_portfolio.technology",
+    "pk": 1,
+    "fields": { "name": "HTML", "icon": "technology_images/html.png" }
+  },
+  {
+    "model": "admin_portfolio.technology",
+    "pk": 2,
+    "fields": { "name": "CSS", "icon": "technology_images/css_1.png" }
+  },
+  {
+    "model": "admin_portfolio.technology",
+    "pk": 3,
+    "fields": { "name": "JavaScript", "icon": "technology_images/js_1.png" }
+  },
+  {
+    "model": "admin_portfolio.technology",
+    "pk": 4,
+    "fields": { "name": "TypeScript", "icon": "technology_images/ts.png" }
+  },
+  {
+    "model": "admin_portfolio.technology",
+    "pk": 5,
+    "fields": { "name": "Python", "icon": "technology_images/archivo.png" }
+  },
+  {
+    "model": "admin_portfolio.technology",
+    "pk": 6,
+    "fields": { "name": "Django", "icon": "technology_images/django.png" }
+  },
+  {
+    "model": "admin_portfolio.technology",
+    "pk": 7,
+    "fields": { "name": "MySQL", "icon": "technology_images/mysql.png" }
+  },
+  {
+    "model": "admin_portfolio.technology",
+    "pk": 8,
+    "fields": { "name": "Postgres", "icon": "technology_images/postgre.png" }
+  },
+  {
+    "model": "admin_portfolio.technology",
+    "pk": 9,
+    "fields": { "name": "Git", "icon": "technology_images/git.png" }
+  },
+  {
+    "model": "admin_portfolio.technology",
+    "pk": 10,
+    "fields": { "name": "GitHub", "icon": "technology_images/github.png" }
+  },
+  {
+    "model": "admin_portfolio.technology",
+    "pk": 11,
+    "fields": {
+      "name": "AI Assistant",
+      "icon": "technology_images/ilustrador.png"
+    }
+  },
+  {
+    "model": "admin_portfolio.skill",
+    "pk": 1,
+    "fields": {
+      "name": "Problem-Solving",
+      "icon": "skill_images/mentalidad.png"
+    }
+  },
+  {
+    "model": "admin_portfolio.skill",
+    "pk": 2,
+    "fields": {
+      "name": "Communication",
+      "icon": "skill_images/online-communication.png"
+    }
+  },
+  {
+    "model": "admin_portfolio.skill",
+    "pk": 3,
+    "fields": { "name": "Help", "icon": "skill_images/ayuda.png" }
+  },
+  {
+    "model": "admin_portfolio.skill",
+    "pk": 4,
+    "fields": {
+      "name": "Performance",
+      "icon": "skill_images/test-de-velocidad.png"
+    }
+  },
+  {
+    "model": "admin_portfolio.skill",
+    "pk": 5,
+    "fields": {
+      "name": "Continous learning",
+      "icon": "skill_images/machine-learning.png"
+    }
+  },
+  {
+    "model": "admin_portfolio.skill",
+    "pk": 6,
+    "fields": {
+      "name": "Development environment",
+      "icon": "skill_images/desarrollo-movil.png"
+    }
+  },
+  {
+    "model": "admin_portfolio.skill",
+    "pk": 7,
+    "fields": {
+      "name": "Fit product",
+      "icon": "skill_images/resolucion-de-problemas.png"
+    }
+  },
+  {
+    "model": "admin_portfolio.experience",
+    "pk": 1,
+    "fields": {
+      "title": "Full-Stack Web Developer",
+      "company": "(Independent / Project-Based)",
+      "description": "</>Key Project: DIAN Tax Management & Compliance System\r\n\r\n+ Architected a subscription-based SaaS platform designed for Colombian companies to automate tax calculations and employee data management.\r\n\r\n+ Developed a secure RESTful API using Django Rest Framework (DRF) and MySQL, implementing JWT (JSON Web Tokens) and Two-Factor Authentication (2FA) for administrative security.\r\n\r\n+ Built a high-performance frontend using React, TypeScript, and Vite, focusing on data visualization and a seamless user experience.\r\n\r\n+ Managed the full development lifecycle, including environment configuration in Linux, version control with Git, and SEO optimization for the landing page.\r\n\r\n</>Key Project: Personal Portfolio Ecosystem (santiagoboada.dev)\r\n\r\n+Designed and deployed a modern, responsive portfolio highlighting technical proficiency in the Python-React stack.\r\n\r\n+Integrated custom UI components and streamlined the deployment pipeline to showcase real-time project updates and technical documentation.\r\n\r\n</>Technical Proficiencies (Hands-On)\r\n+Backend Architecture: Developing robust logic with Python and Django, specializing in relational database design with SQL.\r\n\r\n+Frontend Engineering: Creating type-safe, scalable interfaces using TypeScript and React.\r\n\r\n+Systems & Automation: Advanced use of Linux Terminal for server management, shell scripting, and workflow automation.",
+      "start_date": "2026-02-11",
+      "is_current": true,
+      "end_date": null
+    }
+  },
+  {
+    "model": "admin_portfolio.education",
+    "pk": 1,
+    "fields": {
+      "degree": "FullStack Developer",
+      "institution": "ConquerBlocks",
+      "description": "Full-Stack Web Development Training\r\n\r\n</>Core Technologies & Environment\r\n+Languages & Frameworks: Python, Django\r\n\r\n+Systems & Tooling: Linux, Terminal/CLI\r\n\r\n+Version Control: Git, GitHub\r\n\r\n</>Frontend Development\r\n+Core: HTML5, CSS3, JavaScript (ES6+)\r\n\r\n+Advanced: TypeScript, React\r\n\r\n+Libraries: Vite\r\n\r\n</>Backend & CMS\r\n+Frameworks: Django, Streamlit\r\n\r\n+Databases: SQL (MySQL)\r\n\r\n+Content Management: WordPress\r\n\r\n</>Deployment & Optimization\r\n+Marketing & Visibility: SEO (Search Engine Optimization)\r\n\r\n+Security: JWT (JSON Web Tokens), Two-Factor Authentication (2FA)",
+      "start_date": "2025-06-01",
+      "is_current": true,
+      "end_date": null
+    }
+  },
+  {
+    "model": "admin_portfolio.contactmessage",
+    "pk": 1,
+    "fields": {
+      "name": "Freepik",
+      "email": "zarvi16g@gmail.com",
+      "message": "asdasd"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 1,
+    "fields": {
+      "name": "Freepik",
+      "title": "Django icons",
+      "url": "https://www.flaticon.es/iconos-gratis/django"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 2,
+    "fields": {
+      "name": "Freepik",
+      "title": "Javascript icons",
+      "url": "https://www.flaticon.es/iconos-gratis/javascript"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 3,
+    "fields": {
+      "name": "rahman13",
+      "title": "Css icons",
+      "url": "https://www.flaticon.es/iconos-gratis/css"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 4,
+    "fields": {
+      "name": "Freepik",
+      "title": "HTML icons",
+      "url": "https://www.flaticon.es/iconos-gratis/html"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 5,
+    "fields": {
+      "name": "Smashicons",
+      "title": "Python icons",
+      "url": "https://www.flaticon.es/iconos-gratis/archivo-de-python"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 6,
+    "fields": {
+      "name": "Laisa Islam Ani",
+      "title": "Github icons",
+      "url": "https://www.flaticon.es/iconos-gratis/github"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 7,
+    "fields": {
+      "name": "smalllikeart",
+      "title": "Git icons",
+      "url": "https://www.flaticon.es/iconos-gratis/git"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 8,
+    "fields": {
+      "name": "Muhammad Atif",
+      "title": "Typescript icons",
+      "url": "https://www.flaticon.es/iconos-gratis/ts"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 9,
+    "fields": {
+      "name": "Freepik",
+      "title": "Postgres icons",
+      "url": "https://www.flaticon.es/iconos-gratis/postgre"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 10,
+    "fields": {
+      "name": "Pixel perfect",
+      "title": "MySQL icons",
+      "url": "https://www.flaticon.es/iconos-gratis/mysql"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 11,
+    "fields": {
+      "name": "Maniprasanth",
+      "title": "Mind icons",
+      "url": "https://www.flaticon.es/iconos-gratis/nube-creativa"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 12,
+    "fields": {
+      "name": "Freepik",
+      "title": "Solve icon",
+      "url": "https://www.flaticon.es/iconos-gratis/solucion"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 13,
+    "fields": {
+      "name": "juicy_fish",
+      "title": "Software Development icon",
+      "url": "https://www.flaticon.es/iconos-gratis/desarrollo-de-software"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 14,
+    "fields": {
+      "name": "Prosymbols Premium",
+      "title": "Communication icon",
+      "url": "https://www.flaticon.es/iconos-gratis/videollamada"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 15,
+    "fields": {
+      "name": "Freepik",
+      "title": "Continuos learning icon",
+      "url": "https://www.flaticon.es/iconos-gratis/aprendizaje-automatico"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 16,
+    "fields": {
+      "name": "Eucalyp",
+      "title": "AI icon",
+      "url": "https://www.flaticon.es/iconos-gratis/motivacion"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 17,
+    "fields": {
+      "name": "Freepik",
+      "title": "Help icon",
+      "url": "https://www.flaticon.es/iconos-gratis/ayuda"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 18,
+    "fields": {
+      "name": "itim2101",
+      "title": "Speed",
+      "url": "https://www.flaticon.es/iconos-gratis/velocidad"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 19,
+    "fields": {
+      "name": "riajulislam",
+      "title": "linkedin iconos",
+      "url": "https://www.flaticon.es/iconos-gratis/linkedin"
+    }
+  },
+  {
+    "model": "admin_portfolio.attribution",
+    "pk": 20,
+    "fields": {
+      "name": "Metami septiana",
+      "title": "correo electrónico iconos",
+      "url": "https://www.flaticon.es/iconos-gratis/correo-electronico"
+    }
+  }
+]

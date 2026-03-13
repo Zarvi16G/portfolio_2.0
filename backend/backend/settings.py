@@ -136,7 +136,7 @@ REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_CLASSES': (
     ),
     'DEFAULT_THROTTLE_RATES': {
-        'contact_form': '100/day',
+        'contact_form': '2/day',
     }
 }
 
